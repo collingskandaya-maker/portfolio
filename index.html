@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcolTech — Elvish 'Ecol' Kandaya. ICT Professional, Systems Support Specialist & Technology Innovator from Malawi." />
+  <title>EcolTech | Elvish Kandaya — ICT Professional</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ============ PAGE LOADER ============ -->
+  <div id="loader">
+    <div class="loader-zap">⚡</div>
+    <p class="loader-title">ECOL<span>TECH</span></p>
+    <div class="loader-track"><div class="loader-bar"></div></div>
+    <p class="loader-sub">BOOTING SYSTEMS...</p>
+  </div>
+
+  <!-- ============ HOLIDAY BANNER ============ -->
+  <div id="holidayBanner" class="holiday-banner">
+    <span id="hbEmoji"></span>
+    <span id="hbText"></span>
+    <button class="hb-close" onclick="closeHolidayBanner()">✕</button>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header id="navbar">
+    <nav class="container nav-inner">
+      <a href="#home" class="logo">⚡ Ecol<span>Tech</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">🚀 Hire Me</a>
+      <button id="menuBtn" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="badge"><span class="dot"></span> Available for projects — Malawi 🇲🇼</p>
+        <h1>
+          <span class="hello" id="heroGreeting">Hello 👋 I'm</span>
+          <span class="name gradient-text">Elvish Kandaya</span>
+          <span class="aka">Also known as <b>ECOL</b> ⚡</span>
+        </h1>
+        <p class="typing-line"><span id="typing"></span><span class="caret">▍</span></p>
+        <p class="hero-sub">
+          ICT Professional, Systems Support Specialist &amp; Technology Innovator —
+          fixing machines, building networks and bringing digital ideas to life.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">🚀 Hire Me</a>
+          <button class="btn btn-glass" onclick="downloadCV()">📄 Download CV</button>
+          <a href="#contact" class="btn btn-ghost">💬 Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal float">
+          <div class="term-head">
+            <span class="td red"></span><span class="td yellow"></span><span class="td green"></span>
+            <span class="term-title">ecoltech.terminal</span>
+          </div>
+          <div class="term-body">
+            <p><span class="tc">$</span> whoami</p>
+            <p class="tp">elvish-kandaya "ecol"</p>
+            <p><span class="tc">$</span> skills --top</p>
+            <p class="tm">repair · networking · OS · gaming · AI</p>
+            <p><span class="tc">$</span> status</p>
+            <p class="tg">● online — ready to fix your tech ⚡</p>
+            <p><span class="tc">$</span> <span class="caret">▍</span></p>
+          </div>
+        </div>
+        <span class="fl-icon i1">🖥️</span>
+        <span class="fl-icon i2">🔧</span>
+        <span class="fl-icon i3">🌐</span>
+        <span class="fl-icon i4">🤖</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">SCROLL<br />▼</a>
+
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// About Me</p>
+        <h2 class="gradient-text">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="card glow-card about-card reveal">
+          <div class="avatar">👨‍💻</div>
+          <h3>Elvish Kandaya</h3>
+          <p class="neon-txt mono">Mr "Ecol" ⚡</p>
+          <p class="muted">ICT Professional · Malawi 🇲🇼</p>
+          <div class="chips">
+            <span>Repair</span><span>Networks</span><span>OS</span>
+            <span>Gaming</span><span>Design</span><span>AI</span>
+          </div>
+          <!-- Languages spoken -->
+          <div class="lang-block" id="langBlock"></div>
+        </div>
+        <div class="about-text">
+          <p class="reveal">My name is <span class="neon-txt"><b>Elvish Kandaya</b></span>, also known as
+            <span class="purple-txt"><b>Ecol</b></span>. I am an ICT Professional specializing in technical support,
+            systems administration, networking, hardware maintenance, and AI-powered solutions.
+            I like solving real-world technology challenges &amp; helping people work more efficiently through
+            reliable ICT solutions.</p>
+          <p class="reveal muted">I enjoy diagnosing and resolving hardware, software, &amp; network issues
+            while delivering dependable technical support. Whether configuring operating systems,
+            maintaining ICT infrastructure, or implementing AI-powered workflows,
+            I focus on providing practical &amp; efficient solutions.</p>
+          <div class="highlight-grid reveal" id="highlights"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section slim">
+    <div class="container stats-grid" id="stats"></div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// My Skills</p>
+        <h2 class="gradient-text">Skills &amp; Expertise</h2>
+        <p class="muted">From hardware &amp; software to communication &amp; AI — combining technical expertise with people skills.</p>
+      </div>
+      <div class="filter-row reveal" id="skillTabs"></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Services</p>
+        <h2 class="gradient-text">What I Can Do For You</h2>
+        <p class="muted">Twenty ways to make your technology work harder — delivered with speed and care.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Resume</p>
+        <h2 class="gradient-text">Experience &amp; Education</h2>
+      </div>
+      <div class="resume-grid">
+        <div>
+          <h3 class="timeline-head reveal">💼 Experience</h3>
+          <div class="timeline" id="expTimeline"></div>
+        </div>
+        <div>
+          <h3 class="timeline-head reveal">🎓 Education</h3>
+          <div class="timeline" id="eduTimeline"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Portfolio</p>
+        <h2 class="gradient-text">Featured Work</h2>
+      </div>
+      <div class="filter-row reveal" id="projectFilters"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY (SLIDESHOW) ============ -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Gallery</p>
+        <h2 class="gradient-text">Behind the Scenes</h2>
+      </div>
+      <div class="gallery-slideshow reveal" id="gallerySlideshow">
+        <img id="gsImg" src="" alt="" onclick="openLightbox(gsIndex)" />
+        <div class="gs-overlay">
+          <div class="gs-caption" id="gsCaption"></div>
+          <div class="gs-counter" id="gsCounter"></div>
+        </div>
+        <button class="gs-arrow gs-prev" onclick="stepGallerySlide(-1)">‹</button>
+        <button class="gs-arrow gs-next" onclick="stepGallerySlide(1)">›</button>
+        <div class="gs-dots" id="gsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <button class="lb-prev" onclick="stepLightbox(-1)">‹</button>
+    <figure>
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-next" onclick="stepLightbox(1)">›</button>
+  </div>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <p class="kicker">// Testimonials</p>
+        <h2 class="gradient-text">What Clients Say</h2>
+      </div>
+      <div class="card glow-card testimonial reveal">
+        <p class="quote-mark">❝</p>
+        <p class="stars" id="tStars"></p>
+        <p class="t-text" id="tText"></p>
+        <p class="t-name neon-txt" id="tName"></p>
+        <p class="t-role muted" id="tRole"></p>
+        <button class="t-arrow t-left" onclick="stepTestimonial(-1)">‹</button>
+        <button class="t-arrow t-right" onclick="stepTestimonial(1)">›</button>
+      </div>
+      <div class="t-dots" id="tDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG ============ -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Blog</p>
+        <h2 class="gradient-text">Technology Tips</h2>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">// Contact</p>
+        <h2 class="gradient-text">Let's Build Something</h2>
+        <p class="muted">Broken laptop? Slow network? Big idea? Send a message — fast responses guaranteed. ⚡</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" id="contactInfo"></div>
+        <form class="card glow-card contact-form reveal" onsubmit="return sendMessage(event)">
+          <div class="form-row">
+            <input type="text" id="fName" placeholder="Your Name *" required />
+            <input type="email" id="fEmail" placeholder="Your Email *" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" id="fPhone" placeholder="Phone Number" />
+            <input type="text" id="fSubject" placeholder="Subject *" required />
+          </div>
+          <textarea id="fMessage" rows="6" placeholder="Tell me about your project or problem... *" required></textarea>
+          <button type="submit" class="btn btn-primary full">📨 Send Message</button>
+          <p class="form-note mono">🔒 Secure — your details are only used to reply to you.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z"></path>
+    </svg>
+    <div class="footer-body">
+      <div class="container footer-grid">
+        <div>
+          <p class="logo">⚡ Ecol<span>Tech</span></p>
+          <p class="muted small">World-class ICT support from Malawi — repairs, networks, operating systems,
+            design and AI-powered solutions. Tech done right. ⚡</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#home">→ Home</a>
+          <a href="#about">→ About</a>
+          <a href="#skills">→ Skills</a>
+          <a href="#services">→ Services</a>
+          <a href="#portfolio">→ Portfolio</a>
+          <a href="#contact">→ Contact</a>
+        </div>
+        <div>
+          <h4>Top Services</h4>
+          <a href="#services">💻 Computer Repair</a>
+          <a href="#services">🪟 Windows Installation</a>
+          <a href="#services">🌐 Network Setup</a>
+          <a href="#services">🎮 Game Installation</a>
+          <a href="#services">🎨 Graphic Design</a>
+          <a href="#services">🤖 AI Consultation</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:collingskandaya@gmail.com">📧 collingskandaya@gmail.com</a>
+          <a href="tel:0888460365">📱 0888 460 365</a>
+          <a href="https://wa.me/265991356460">💬 WhatsApp</a>
+          <p class="muted small">📍 Blantyre, Malawi 🇲🇼</p>
+        </div>
+      </div>
+      <p class="copyright mono">© <span id="year"></span> EcolTech · Elvish "Ecol" Kandaya · Made with ⚡ in Malawi</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- ============ AI CHATBOT ============ -->
+  <button id="botBtn" onclick="toggleBot()">🤖</button>
+  <div id="botPanel">
+    <div class="bot-head">
+      <span class="bot-avatar">🤖</span>
+      <div>
+        <p class="bot-name">EcolBot</p>
+        <p class="bot-status"><span class="dot"></span> Online — AI Assistant</p>
+      </div>
+    </div>
+    <div class="bot-body" id="botBody"></div>
+    <form class="bot-input" onsubmit="return botSend(event)">
+      <input type="text" id="botText" placeholder="Ask about Ecol" autocomplete="off" />
+      <button type="submit">➤</button>
+    </form>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
